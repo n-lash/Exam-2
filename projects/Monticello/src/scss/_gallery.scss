@@ -1,0 +1,42 @@
+.gallery {
+    background-color: $N0;
+    padding: 140px 0;
+    &__container {}
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__grid {
+        width: 100%;
+        margin-bottom: 60px;
+        @include flex-row;
+    }
+
+    &__column {
+        flex: 1 1 50%;
+        max-width: 50%;
+
+        &--first {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            padding-right: 5px;
+        }
+        &--second {
+            flex-wrap: wrap;
+            padding-left: 5px;
+        }
+    }
+    &__img-wrapper {
+        display: inline-flex;
+        &:nth-child(odd) {
+            padding-right: 5px;
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+    }
+}

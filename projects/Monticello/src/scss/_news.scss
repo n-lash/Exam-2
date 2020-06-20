@@ -1,0 +1,112 @@
+.news {
+    background: #6c9cc0 url('../img/news-bg-gradient.jpg') center no-repeat;
+    background-size: cover;
+    padding: 140px 0;
+    text-align: center;
+    &__container {
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__slider {}
+
+    &__slider-list {}
+
+    &__text-wrapper {
+        padding: 30px 20px;
+        background-color: $N0;
+    }
+
+    &__slider-item {}
+
+    &__slider-item-title {
+        font-family: $got-bold;
+        @include text($H22, 700, $text-color--title--btn--contact);
+        line-height: 1.55;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 20px;
+        @include media($screen-desktop) {
+            a:hover {
+                color: $text-color--date;
+            }
+        }
+    }
+
+    &__slider-item-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        text-align: left;
+        margin-bottom: 35px;
+        margin-top: 0;
+        
+    }
+
+    &__slider-item-footer {
+        @include flex-row;
+    }
+
+    &__slider-item-author {
+        flex: 1 1 20%;
+        max-width: 20%;
+    }
+    
+    &__slider-item-footer-text {
+        flex: 1 1 80%;
+        max-width: 80%;
+        padding-left: 20px;
+        text-align-last: left;
+        font-family: $got-book;
+    }
+    &__slider-item-name {
+        text-transform: uppercase;
+        color: $text-color--title--btn--contact;
+        // margin-bottom: 14px;
+        line-height: 1;
+    }
+
+    &__slider-item-date {
+        @include text($H14, 400, $text-color--date);
+        text-transform: capitalize;
+    }
+
+    &__slider-dots-list {
+        margin-top: 60px;
+        
+        @include flex-row;
+        position: relative;
+        left: 50%;
+        // transform: translateX(-50%);
+        transform: translateX(-7%);
+        li {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid white;
+            transition: background-color .2s ease;
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.uk-active {
+                background-color: white;
+            }
+        }
+    }
+    &__slider-arrow {
+        svg {
+            display: none;
+        }
+        margin: 0 60px 0 0;
+        padding: 0;
+        &--left {
+            margin: 0 0 0 60px;
+            padding: 0;
+        }
+    }
+}

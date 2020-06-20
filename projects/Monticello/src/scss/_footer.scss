@@ -1,0 +1,47 @@
+.footer {
+    color: $N0;
+    background-color: linear-gradient( 45deg, rgb(85,183,255) 0%, rgb(126,90,255) 100%);
+    background: url('../img/footer-bg-gradient.jpg') center no-repeat;
+    background-size: cover;
+    padding: 220px 0 210px;
+    &__container {
+        max-width: 770px;
+        // padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__content-wrapper {
+        @include flex-row;
+        margin-bottom: 50px;
+        @include flex-row(space-between, center);
+    }
+
+    &__logo {}
+
+    &__socials {
+        @include flex-row(space-between, center);
+    }
+
+    &__socials-item:not(:last-child) {
+        margin-right: 20px;  
+    }
+
+    &__socials-link {
+        text-align: center;
+        span {
+            font-size: 0;
+        }
+        i {
+            font-size: 16px;
+            color: $N0;
+            width: 40px;
+            height: 40px;
+            padding: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+        }
+    }
+
+    &__text {}
+}

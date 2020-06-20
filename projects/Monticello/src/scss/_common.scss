@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,
+body {
+    min-height: 100vh;
+}
+body {
+    font-size: 100%;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: $H18;
+    line-height: 1.67;
+}
+ a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    color: $text-color--title--btn--contact;
+    cursor: pointer;
+}
+input,
+textarea {
+    border: none;
+}
+textarea {
+    font: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+
+/*uikit*/
+address, dl, fieldset, figure, ol, p, pre, ul {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: $got-bold;
+    @include text($H44, 700, $text-color--title--btn--contact);
+    line-height: 1;
+    text-transform: uppercase;
+    line-height: 2.7;
+    // text-align: center;
+    &--color-white {
+        font-family: $got-medium;
+        color: $N0;
+    }
+    &:before {
+        content:'';
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: $text-color--title--btn--contact;
+        // background-color: red;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &--color-white:before {
+        background-color: $N0;
+    }
+}
+.btn {
+    font-family: $got-book;
+    text-transform: uppercase;
+    line-height: 1;
+    @include text($H14, 400, $text-color--title--btn--contact);
+    min-width: 190px;
+    max-width: fit-content;
+    min-height: 50px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px solid $text-color--title--btn--contact;
+    @include flex-row(center, center);
+    margin-bottom: 60px;
+    &--contact-btn {
+        min-width: 140px;
+    }
+    @include media($screen-desktop) {
+        &:hover {
+            color: $text-color--date;
+            border-color: $text-color--date;
+        }
+    }
+}
