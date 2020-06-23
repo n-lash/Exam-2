@@ -8,7 +8,6 @@
     margin: 0 auto;
     padding-top: 54px;
     @include flex-row(space-between, center);
-    &__logo {}
 
     &__list {
         @include flex-row(space-between, center);
@@ -25,8 +24,8 @@
         &:before {
             content: '';
             display: inline-block;
-            width: 9px;
-            height: 9px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             border: 1px solid $N0;
             margin-right: 14px;

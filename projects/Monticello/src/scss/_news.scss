@@ -3,9 +3,9 @@
     background-size: cover;
     padding: 140px 0;
     text-align: center;
-    &__container {
-        position: relative;
-    }
+    // &__container {
+    //     position: relative;
+    // }
     &__title {
         margin-bottom: 60px;
     }
@@ -76,36 +76,34 @@
 
     &__slider-dots-list {
         margin-top: 60px;
-        
-        @include flex-row;
-        position: relative;
-        left: 50%;
-        // transform: translateX(-50%);
-        transform: translateX(-7%);
+        justify-content: center;
+
         li {
-            width: 9px;
-            height: 9px;
-            border-radius: 50%;
-            background-color: transparent;
-            border: 1px solid white;
-            transition: background-color .2s ease;
-            margin-right: 40px;
+            margin-right: 20px;
             &:last-child {
                 margin-right: 0;
             }
-            &.uk-active {
-                background-color: white;
-            }
+        }
+    }
+    &__slider-dots-list>.uk-active>a {
+        background-color: $N0;
+    }
+    &__slider-dots-list>li>a {
+        // border: 1px solid rgba(255,255,255,.4);
+        border: 1px solid $N0;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $N0;
         }
     }
     &__slider-arrow {
         svg {
             display: none;
         }
-        margin: 0 60px 0 0;
+        margin: 0 50px 0 0;
         padding: 0;
-        &--left {
-            margin: 0 0 0 60px;
+        &--right {
+            margin: 0 0 0 50px;
             padding: 0;
         }
     }

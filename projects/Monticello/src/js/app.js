@@ -168,8 +168,7 @@
         var marker = new google.maps.Marker(
         {
             position: {lat: 40.678381, lng: -73.898151},       
-            map: map, 
-            // icon: './pin-in-the-map-64px.png',    
+            map: map,     
             icon: '../img/map-pin.png',
             title: 'Monticello',
         }

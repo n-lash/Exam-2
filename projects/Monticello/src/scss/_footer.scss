@@ -16,8 +16,6 @@
         @include flex-row(space-between, center);
     }
 
-    &__logo {}
-
     &__socials {
         @include flex-row(space-between, center);
     }
@@ -43,5 +41,5 @@
         }
     }
 
-    &__text {}
+    // &__text {}
 }

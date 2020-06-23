@@ -1,15 +1,13 @@
 .contacts {
     background-color: $N0;
-    // background-color: grey;
     color: $text-color--title--btn--contact;
     position: absolute;
     left: 50%;
-    // transform: translateX(-50%);
     transform: translate(-50%, -64%);
     z-index: 3;
     &__container {
         max-width: 770px;
-        padding: 60px 60px 10px 60px;
+        padding: 60px 60px 70px 60px;
         margin: 0 auto;
     }
 
@@ -43,30 +41,46 @@
     }
     &__link {
         margin-bottom: 30px;
+        & i {
+            margin-right: 5px;
+        }
+        @include media($screen-desktop) {
+            &:hover {
+                text-decoration: underline;
+                color: $text-color--contact-icons;
+            }
+        }
     }
 
-    &__input-wrapper {}
+    // &__input-wrapper {}
 
     &__input {
         width: 100%;
-        height: 60px;
-        border-bottom: 1px solid $text-color--title--btn--contact;
+        height: 50px;
+        // border-bottom: 1px solid $text-color--title--btn--contact;
+        border-bottom: 1px solid rgba($text-color, 0.5);
         margin-bottom: 30px;
-        padding: 0 15px;
-        &:first-child {
+        @include text($H18, 400, $text-color--title--btn--contact);
+        // &:first-child {
+        //     margin-bottom: 30px;
+        // }
+        &::placeholder {
+            // color: rgba(75, 85, 98, 0.5);
+            font-family: $got-medium;
+            @include text($H14, 400, rgba($text-color, 0.5));
+            line-height: 1;
             margin-bottom: 20px;
         }
-        &::placeholder {
-            color: rgba(75, 85, 98, 0.5);
-            font-family: $got-medium;
-            @include text($H14);
-            line-height: 1;
-            margin-bottom: 6px;
+        @include media($screen-desktop) {
+            &:focus {
+                outline: none;
+                border-bottom: 1px solid $text-color;
+            }
         }
     }
-
     &__btn {
         align-self: flex-end;
         margin-left: auto;
+        margin-bottom: 0;
     }
 }
