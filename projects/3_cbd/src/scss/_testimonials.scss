@@ -1,0 +1,132 @@
+.testimonials {
+    background-color: $G410;
+    color: $N0;
+    position: relative;
+    padding-bottom: 40px;
+
+    @include media($screen-tablet) {
+        padding-bottom: 0;
+    }
+}
+
+.testimonials-slider {
+    &__list {
+        min-height: 96vh !important;
+    }
+    &__item {
+        padding: 15px;
+        // @include flex-col(center, center);
+        background: url('../img/testimonials-bg.jpg') center no-repeat;
+        background-size: cover;
+        &:nth-child(2) {
+            background: url('https://picsum.photos/1920/800') center no-repeat;
+        }
+        &:last-child {
+            background: url('https://picsum.photos/1920/800?blur') center no-repeat;
+        }
+    }
+    &__content-wrapper {
+        @include flex-col(center, center);
+        height: 100%;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $G810;
+            z-index: 0;
+            opacity: 0.6;
+        }
+    }
+    &__item-rating {
+        @include flex-row(center, center);
+        margin-bottom: 40px;
+        z-index: 1;
+    }
+    &__item-star:not(:last-child) {
+        margin-right: 3px;
+    }
+    &__item-text {
+        @include text($H22, 300);
+        line-height: 1.82;
+        letter-spacing: 4.4px;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    &__item-text,
+    &__item-author  {
+        max-width: 90%;
+        text-align: center;
+        z-index: 1;
+
+        @include media($screen-desktop) {
+            max-width: 746px;
+        }
+    }
+    &__item-author {
+        @include text($H24);
+        letter-spacing: 4.8px;
+        text-align: center;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 0 auto;
+        &:before {
+            content: '';
+            display: inline-block;
+            background-color: $N0;
+            width: 45px;
+            height: 2px;
+            margin-right: 20px;
+            transform: translateY(-9px);
+        }
+    }
+    &__item-aside {
+        @include text($H26, 300, $N10);
+        text-transform: uppercase;
+        letter-spacing: 6.72px;
+        transform: rotate(90deg);
+        transform-origin: right top;
+        transform: rotate(90deg);
+        transform-origin: right top;
+        position: absolute;
+        left: -150px;
+        bottom: -15px;
+        display: none;
+        
+        @include media($screen-desktop) {
+            display: block;
+        }
+    }
+    &__arrow-wrapper {
+        @include flex-row;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @include media($screen-tablet) {
+            transform: translate(-50%, -40px);
+        }
+        @include media($screen-desktop) {
+            transform: translate(-50%, -100px);
+        }
+    }
+    &__arrow {
+        width: 70px;
+        height: 40px;
+        @include border($N0);
+        @include flex-row(center, center);
+        padding: 0 5px;
+        svg {
+            display: none;
+        }
+        @include media($screen-desktop) {
+            width: 130px;
+            height: 100px;
+            &:hover {
+                background-color: rgba($N0, 0.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>CBD</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header" id="header">
+			
+			<div class="header-burger" id="headerBurger">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+					</svg>
+				</div>
+				<div class="header__logo-mobile">
+					<a href="/">CBD</a>
+				</div>
+	
+		<div class="header__container  container" id="mobileMenu">
+			<nav class="header-nav">
+				<ul class="header-nav__list" id="navList">
+					<li class="header-nav__item">
+						<a href="#intro" class="header-nav__link selected">Home</a>
+					</li>
+					<li class="header-nav__item">
+						<a href="#products" class="header-nav__link">Products</a>
+					</li>
+					<li class="header-nav__item">
+						<a href="#faqs" class="header-nav__link">FAQS</a>
+					</li>
+					<li class="header-nav__item">
+						<a href="#contact" class="header-nav__link">Contact&nbsp;us</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__logo">
+				<a href="/">CBD</a>
+			</div>
+			<div class="header-menu">
+				<ul class="header-menu__list">
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="#">Login</a>
+					</li>
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+								<g>
+									<path fill-rule="evenodd" d="M19.844 18.98l-4.859-4.861c1.303-1.498 2.093-3.454 2.093-5.592 0-4.704-3.827-8.528-8.527-8.528C3.847-.001.025 3.827.025 8.527c0 4.701 3.826 8.528 8.526 8.528 2.137 0 4.093-.789 5.591-2.093l4.86 4.86c.115.115.27.178.421.178.151 0 .306-.058.421-.178.231-.23.231-.612 0-.842zM1.218 8.527c0-4.044 3.29-7.33 7.329-7.33 4.044 0 7.329 3.291 7.329 7.33 0 4.04-3.285 7.335-7.329 7.335-4.039 0-7.329-3.29-7.329-7.335z"/>
+								</g>				
+							</svg>
+							Search
+						</a>
+					</li>
+					<li class="header-menu__item">
+						<a class="header-menu__link" href="#">Cart (<span>0</span>)</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="intro" id="intro">
+			<div class="intro__container">
+				<h1 class="intro__title">Enhancing Life <span>Excelling in Care</span></h1>
+				<p class="intro__slogan">Choose Wisely. Choose CBD.</p>
+				<a href="#products" class="intro__btn">Start shopping</a>
+				<a href="#" class="intro__link">See all products <img src="./img/icons/intro-arrow-right.svg" alt="link-arrow-right"></a>
+				<aside class="intro__aside">CBD Potion health</aside>
+				<a href="#about-us" class="intro__scroll animated fadeInDown infinite"><img src="./img/icons/arrow-down.svg" alt="scroll-down"></a>
+			</div>
+		</section>
+
+		<section class="about-us" id="about-us">
+			<div class="container">
+				<div class="about-us__title-wrapper">
+					<h2 class="about-us__title">We are what we are</h2>
+					<div class="about-us__logos">
+						<img src="./img/logos.png" alt="logos">
+					</div>
+				</div>
+
+				<div class="about-us__tabs">
+					<ul class="about-us__tablinks" uk-tab>
+						<li class="about-us__tablinks-title  uk-active"><a href="#">What is CBD ?</a></li>
+						<li class="about-us__tablinks-title"><a href="#">Benefits</a></li>
+						<li class="about-us__tablinks-title"><a href="#">Our difference</a></li>
+					</ul>
+					<ul class="uk-switcher">
+						<li class="about-us__tabcontent  uk-active">
+							<div class="about-us__tabcontent-text-wrapper">
+								<h4 class="about-us__tabcontent-title">WHAT IT IS AND HOW <span>IT WORKS</span></h4>
+								<p class="about-us__tabcontent-text">CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for supporting the body and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.</p>
+								<p class="about-us__tabcontent-text">Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD comes from the flowers and leaves of the hemp plant.</p>
+								<p class="about-us__tabcontent-text">Why does CBD work? The human body has a vast network of receptors, the endocannabinoid system.</p>
+							</div>
+							<div class="about-us__tabcontent-images">
+								<img src="./img/tabs-img-1.jpg" alt="mountains">
+								<img src="./img/tabs-img-2.jpg" alt="wheat field">
+							</div>
+						</li>
+						<li class="about-us__tabcontent">
+							<div class="about-us__tabcontent-text-wrapper">
+								<h4 class="about-us__tabcontent-title">Benefits</h4>
+								<p class="about-us__tabcontent-text">CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for supporting the body and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.</p>
+								<p class="about-us__tabcontent-text">Why does CBD work? The human body has a vast network of receptors, the endocannabinoid system.</p>
+							</div>
+							<div class="about-us__tabcontent-images">
+								<img src="https://picsum.photos/570/300" alt="foto">
+								<img src="https://picsum.photos/seed/picsum/570/300" alt="mountains">
+							</div>
+						</li>
+						<li class="about-us__tabcontent">
+							<div class="about-us__tabcontent-text-wrapper">
+								<h4 class="about-us__tabcontent-title">Our difference</h4>
+								<p class="about-us__tabcontent-text">CBD is short for cannabidiol. It is a phytocannabinoid found in hemp and known for supporting the body and mind in many ways.* Charlotte’s Web products have cannabinoids with CBD extract.</p>
+								<p class="about-us__tabcontent-text">Not to be confused with oil from hemp seeds (which doesn’t contain cannabinoids), CBD comes from the flowers and leaves of the hemp plant.</p>
+							</div>
+							<div class="about-us__tabcontent-images">
+								<img src="https://picsum.photos/570/300?grayscale" alt="foto">
+								<img src="https://picsum.photos/id/1018/570/300" alt="foto">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="products" id="products">
+			<div class="products__container  container">
+				<h2 class="products__title">CBD Featured Products</h2>
+
+				<div class="products-slider  uk-position-relative uk-visible-toggle" uk-slider>
+						<ul class="products-slider__list uk-slider-items">
+							<li class="products-slider__item">
+								<div class="products-slider__item-info">
+									<ul class="products-slider__item-rating">
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+									</ul>
+									<h5 class="products-slider__item-title">CBD 500 mg Orange Flavor Tincture</h5>
+									<img src="./img/products-slider-img-1.png" alt="">
+								</div>
+								<div class="products-slider__item-footer">
+									<p class="products-slider__item-price">$<span>49.99</span> USD</p>
+									<button class="products-slider__item-btn" type="submit"><span>Shop</span></button>
+								</div>
+							</li>
+							<li class="products-slider__item">
+								<div class="products-slider__item-info">
+									<ul class="products-slider__item-rating">
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+									</ul>
+									<h5 class="products-slider__item-title">Black ICE CBD Muscle Rub 200 mg</h5>
+									<img src="./img/products-slider-img-2.png" alt="">
+								</div>
+								<div class="products-slider__item-footer">
+									<p class="products-slider__item-price">$<span>49.99</span> USD</p>
+									<button class="products-slider__item-btn" type="submit"><span>Shop</span></button>
+								</div>
+							</li>
+							<li class="products-slider__item">
+								<div class="products-slider__item-info">
+									<ul class="products-slider__item-rating">
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+									</ul>
+									<h5 class="products-slider__item-title">CBD+Curcumin Coffee 750 mg</h5>
+									<img src="./img/products-slider-img-3.png" alt="">
+								</div>
+								<div class="products-slider__item-footer">
+									<p class="products-slider__item-price">$<span>49.99</span> USD</p>
+									<button class="products-slider__item-btn" type="submit"><span>Shop</span></button>
+								</div>
+							</li>
+							<li class="products-slider__item">
+								<div class="products-slider__item-info">
+									<ul class="products-slider__item-rating">
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+									</ul>
+									<h5 class="products-slider__item-title">CBD 500 mg Orange Flavor Tincture</h5>
+									<img src="./img/products-slider-img-1.png" alt="">
+								</div>
+								<div class="products-slider__item-footer">
+									<p class="products-slider__item-price">$<span>49.99</span> USD</p>
+									<button class="products-slider__item-btn" type="submit"><span>Shop</span></button>
+								</div>
+							</li>
+							<li class="products-slider__item">
+								<div class="products-slider__item-info">
+									<ul class="products-slider__item-rating">
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+									</ul>
+									<h5 class="products-slider__item-title">Black ICE CBD Muscle Rub 200 mg</h5>
+									<img src="./img/products-slider-img-2.png" alt="">
+								</div>
+								<div class="products-slider__item-footer">
+									<p class="products-slider__item-price">$<span>49.99</span> USD</p>
+									<button class="products-slider__item-btn" type="submit"><span>Shop</span></button>
+								</div>
+							</li>
+							<li class="products-slider__item">
+								<div class="products-slider__item-info">
+									<ul class="products-slider__item-rating">
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+										<li><img src="./img/icons/products-star.svg" alt="star"></li>
+									</ul>
+									<h5 class="products-slider__item-title">CBD+Curcumin Coffee 750 mg</h5>
+									<img src="./img/products-slider-img-3.png" alt="">
+								</div>
+								<div class="products-slider__item-footer">
+									<p class="products-slider__item-price">$<span>49.99</span> USD</p>
+									<button class="products-slider__item-btn" type="submit"><span>Shop</span></button>
+								</div>
+							</li>
+						</ul>
+						<div class="products-slider__arrows-wrapper">
+							<a class="products-slider__arrow" href="#" uk-slidenav-previous uk-slider-item="previous"><img src="./img/icons/products-slider-arrow-left.svg" alt="arrow left"></a>
+							<a class="products-slider__arrow products-slider__arrow--right" href="#" uk-slidenav-next uk-slider-item="next"><img src="./img/icons/products-slider-arrow-right.svg" alt="arrow right"></a>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faqs" id="faqs">
+			<div class="faqs__container  container">
+				<h2 class="faqs__title">Frequently asked questions</h2>
+
+				<ul class="faqs-accordion" uk-accordion>
+					<li class="faqs-accordion__item">
+						<a class="faqs-accordion__title  uk-accordion-title" href="#"> What is Cannabidiol (CBD)? </a>
+						<div class="faqs-accordion__content  uk-accordion-content">
+							<p class="faqs-accordion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</li>
+					<li class="faqs-accordion__item">
+						<a class="faqs-accordion__title  uk-accordion-title" href="#"> Is Hemp-Derived Cannabidiol (CBD) Legal? </a>
+						<div class="faqs-accordion__content  uk-accordion-content">
+							<p class="faqs-accordion__text">Because CBD from hemp has no psychoactive effects, the purchase, sales, or possession of hemp CBD products are completely legal in all 50 States. </p>
+						</div>
+					</li>
+					<li class="faqs-accordion__item">
+						<a class="faqs-accordion__title  uk-accordion-title" href="#">Are there any negative side effects? </a>
+						<div class="faqs-accordion__content  uk-accordion-content">
+							<p class="faqs-accordion__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+						</div>
+					</li>
+					<li class="faqs-accordion__item">
+						<a class="faqs-accordion__title  uk-accordion-title" href="#">Do you offer a return policy?</a>
+						<div class="faqs-accordion__content  uk-accordion-content">
+							<p class="faqs-accordion__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<div class="testimonials-slider  uk-position-relative uk-visible-toggle" uk-slideshow="animation: fade">
+				<ul class="testimonials-slider__list  uk-slideshow-items">
+					<li class="testimonials-slider__item">
+						<div class="testimonials-slider__content-wrapper">
+							<ul class="testimonials-slider__item-rating">
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+							</ul>
+							<p class="testimonials-slider__item-text">I have tried another product after using this one successfully, and I am Back for good! The flavour, the lightness of the oil and the health benefits I have gotten with this oil are amazing!</p>
+							<p class="testimonials-slider__item-author">Mark J.</p>
+						</div>
+					</li>
+					<li class="testimonials-slider__item">
+						<div class="testimonials-slider__content-wrapper">
+							<ul class="testimonials-slider__item-rating">
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+							</ul>
+							<p class="testimonials-slider__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error soluta ea repudiandae ad molestiae. Optio cumque nisi quos, quaerat officia reprehenderit illo ducimus eius suscipit omnis in quia.</p>
+							<p class="testimonials-slider__item-author">Lorem I.</p>
+						</div>
+					</li>
+					<li class="testimonials-slider__item">
+						<div class="testimonials-slider__content-wrapper">
+							<ul class="testimonials-slider__item-rating">
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
+							</ul>
+							<p class="testimonials-slider__item-text">I am back for good! CBD is amazing!</p>
+							<p class="testimonials-slider__item-author">Ipsum L.</p>
+						</div>
+					</li>
+				</ul>
+				<aside class="testimonials-slider__item-aside">CBD every day</aside>
+				<div class="testimonials-slider__arrow-wrapper">
+					<a class="testimonials-slider__arrow" href="#" uk-slidenav-previous uk-slideshow-item="previous"><img src="./img/icons/testimonials-slider-left.svg" alt=""></a>
+					<a class="testimonials-slider__arrow" href="#" uk-slidenav-next uk-slideshow-item="next"><img src="./img/icons/testimonials-slider-right.svg" alt=""></a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer" id="contact">
+		<div class="footer__container  container">
+			<div class="footer__logo"><a href="/">CBD</a></div>
+			<div class="footer__text-wrapper">
+				<ul class="footer__deal-links">
+					<li><a href="#" class="footer__link" target="_blank">Privacy Policy</a></li>
+					<li><a href="#" class="footer__link" target="_blank">Terms of Use</a></li>
+					<li><a href="#" class="footer__link" target="_blank">Return Policy</a></li>
+				</ul>
+				<ul class="footer__socials">
+					<li class="footer__socials-item">
+						<a class="footer__social-link" href="#" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="11" height="21">
+								<g>
+									<path fill-rule="evenodd" d="M10.586.004L7.947-.001c-2.964 0-4.879 2.029-4.879 5.168v2.384H.415c-.229 0-.415.191-.415.428v3.452c0 .237.186.429.415.429h2.652v8.712c0 .236.186.428.415.428h3.461c.23 0 .415-.192.415-.428V11.86h3.102c.229 0 .415-.192.415-.429l.001-3.452c0-.114-.044-.223-.122-.303-.077-.08-.183-.125-.293-.125H7.358V5.53c0-.971.225-1.463 1.45-1.463l1.777-.001c.229 0 .415-.192.415-.428V.432c0-.236-.186-.428-.414-.428z"/>
+								</g>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__socials-item">
+						<a class="footer__social-link" href="#" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18">
+								<g>
+									<path fill-rule="evenodd" d="M21.393.332c-.873.521-1.839.899-2.868 1.104C17.702.551 16.53 0 15.232 0c-2.493 0-4.514 2.035-4.514 4.544 0 .356.04.703.117 1.035C7.084 5.39 3.758 3.58 1.532.83c-.388.671-.61 1.451-.61 2.285 0 1.577.798 2.968 2.007 3.783-.739-.025-1.435-.23-2.044-.571v.057c0 2.202 1.556 4.038 3.62 4.457-.378.103-.777.16-1.189.16-.291 0-.573-.03-.85-.083.575 1.806 2.241 3.12 4.215 3.157-1.544 1.219-3.491 1.945-5.604 1.945-.365 0-.724-.022-1.077-.062C1.998 17.246 4.369 18 6.918 18c8.302 0 12.841-6.926 12.841-12.932l-.015-.59c.885-.637 1.652-1.438 2.256-2.349-.81.361-1.678.607-2.591.716.932-.562 1.646-1.454 1.984-2.513z"/>
+								</g>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__socials-item">
+						<a class="footer__social-link" href="#" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="27" height="19">
+								<g>
+									<path fill-rule="evenodd" d="M27.005 4.059c0-2.243-1.807-4.06-4.035-4.06H4.04C1.811-.001.005 1.816.005 4.059v10.882C.005 17.182 1.811 19 4.04 19h18.93c2.228 0 4.035-1.818 4.035-4.059V4.059zm-16.2 10.032V3.869l7.71 5.111-7.71 5.111z"/>
+								</g>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul class="footer__delivery-links">
+					<li><a class="footer__delivery-link" href="#" target="_blank">SHIPPING INFO</a></li>
+					<li><a class="footer__delivery-link" href="#" target="_blank">RETURNS&nbsp;/&nbsp;EXCHANGES</a></li>
+					<li><a class="footer__delivery-link" href="#" target="_blank">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="footer-form">
+				<h5 class="footer-form__title">Subscribe to Newsletter</h5>
+				<form class="footer-form__form" action="#">
+					<input class="footer-form__input" type="text" placeholder="Email">
+					<button class="footer-form__btn" type="submit">
+						<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15">
+							<g>
+								<path fill-rule="evenodd" d="M24.828 7.079l-5.68-5.904c-.204-.248-.562-.277-.801-.064-.238.211-.266.584-.062.832.019.023.04.045.062.064l4.709 4.9H.568c-.314 0-.568.264-.568.591 0 .326.254.59.568.59h22.488l-4.709 4.894c-.238.212-.266.585-.062.832.204.248.563.277.801.065.022-.02.043-.041.062-.065l5.68-5.903c.221-.23.221-.602 0-.832z"/>
+							</g>
+						</svg>
+					</button>
+				</form>
+				<p class="footer__copyrights">&copy; 2018. CBD health.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+	<script src="js/bundle.js"></script>
+</body>
+</html>

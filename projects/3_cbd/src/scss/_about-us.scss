@@ -1,0 +1,138 @@
+.about-us {
+    padding: 60px 0 50px;
+
+    @include media($screen-tablet) {
+        padding: 100px 0 75px;
+    }
+    &__title-wrapper {
+        margin-bottom: 30px;
+        @include media($screen-tablet) {
+            width: 690px;
+            height: 200px;
+            padding: 24px 80px 40px;
+            background: url('../img/we-are-holder.png');
+            margin: 0 auto 100px;
+        }
+    }
+    &__title {
+        @include text($H24, 400, $N550);
+        text-transform: uppercase;
+        line-height: 3.13;
+        letter-spacing: 4.8px;
+        text-align: center;
+    }
+    &__logos {
+        display: none;
+        @include media($screen-tablet) {
+            display: block;
+        }
+    }
+    &__tabs {
+        max-width: calc(1170px + 10%);
+        margin: auto;
+        padding-left: 0;
+        @include media($screen-netbook) {
+            padding-left: 10%;
+        }
+    }
+
+    &__tablinks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:before {
+            border-bottom: 2px solid $G420;
+            max-width: 82%;
+        }
+        a {
+            font-size: inherit;
+        }
+        & .uk-active > a {
+            border-bottom: 2px solid $N550;
+        }
+        @include media($screen-netbook) {
+            flex-direction: row;
+        }
+    }
+    &__tablinks-title {
+        @include text($H30, 400, $N550);
+        text-transform: uppercase;
+        line-height: 2.5;
+        letter-spacing: 6px;
+        text-align: center;
+        padding-left: 0;
+        &:first-child {
+            padding-left: 0;
+        }
+        @include media($screen-netbook) {
+            padding-left: 60px;
+        }
+    }
+    &__tabcontent {
+        padding-top: 80px;
+        @include flex-col(stretch, center);
+        flex-direction: column-reverse;
+        @include media($screen-netbook) {
+            padding-left: 60px;
+            @include flex-row(space-between);
+        }
+    }
+    &__tabcontent-text-wrapper {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding-top: 40px;
+
+        @include media($screen-netbook) {
+            padding-right: 15%;
+            padding-top: 0;
+            flex: 1 1 51%;
+            max-width: 51%;
+        }
+    }
+    &__tabcontent-title {
+        @include text($H24, 400, $N00);
+        text-transform: uppercase;
+        line-height: 1.67;
+        letter-spacing: 4.8px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @include media($screen-netbook) {
+            text-align: left;
+            span {
+                display: block;
+            }
+        }
+    }
+    &__tabcontent-text {
+        font-weight: 300;
+        letter-spacing: 0.72px;
+        text-align: left;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include media($screen-netbook) {
+            margin-bottom: 46px;
+            line-height: 2.22;
+        }
+    }
+    &__tabcontent-images {
+        flex: 1 1 100%;
+        max-width: 100%;
+        @include flex-col(space-between, center);
+        height: 100%;
+        img {
+            display: block;
+            &:first-child {
+                margin-bottom: 30px;
+            }
+        }
+        @include media($screen-netbook) {
+            flex: 1 1 49%;
+            max-width: 49%;
+        }
+    }
+}

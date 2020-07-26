@@ -1,0 +1,132 @@
+.products {
+    padding: 75px 0 75px;
+    &__container {
+        padding: 0 0;
+    }
+    &__title {
+        @include text($H30, 400, $N550);
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+}
+
+.products-slider {
+    &__container {
+        width: 100vw;
+        max-width: 1920px;
+        padding: 0;
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        margin-bottom: 60px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    &__item {
+        width: 100%;
+        transform: translateX(40px);
+        flex: 1;
+        margin-right: 20px;
+        margin-left: 20px;
+        min-width: 100%;
+
+        @include media($screen-tablet) {          
+            width: 50%;
+            min-width: 50%;
+        }
+        @include media($screen-netbook) {
+            width: calc(33% - 20px);
+            min-width: 31.5%;
+        }
+    }
+    &__item-info {
+        padding: 40px 20px;
+        @include flex-col(space-between, center);
+        @include border($G420);
+        min-height: 430px;
+        height: 430px;
+    }
+    &__item-rating {
+        @include flex-row(center, center);
+        margin-bottom: 20px;
+        li:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+    &__item-title {
+        @include text($color: $N550);
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &__item-footer {
+        text-align-last: left;
+        @include flex-row(space-between, center);
+        min-height: 75px;
+    }
+    &__item-price {
+        padding: 0 30px;
+        @include text($color: $N550);
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        background-color: $N20;
+        line-height: 1;
+        border-left: 1px solid $N30;
+        border-bottom: 1px solid $N30;
+        flex-basis: 60%;
+        max-width: 60%;
+        min-height: 75px;
+        @include flex-row($align: center);
+    }
+    &__item-btn {
+        padding: 0 30px;
+        text-align: left;
+        @include text($H20, $color: $N0);
+        background-color: $G490;
+        flex-basis: 40%;
+        max-width: 40%;
+        min-height: 75px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        &:after {
+            content: '';
+            display: inline-block;
+            background-color: $N0;
+            width: 29.5%;
+            height: 2px;
+            margin-left: 14px;
+            transform: translateY(-6px);
+        }
+        span {
+            display: inline-block;
+            @include text($H20, $color: $N0);
+            text-transform: uppercase;
+            line-height: 1;
+        }
+    }
+    &__arrows-wrapper {
+        position: relative;
+        left: 50%;
+        transform: translateX(-80px);
+        margin-top: 30px;
+
+        @include media($screen-tablet) {
+            margin-top: 40px;
+        }
+        @include media($screen-netbook) {
+            margin-top: 60px;
+        }
+    }
+    &__arrow {
+        svg {
+            display: none;
+        }
+        &--right {
+            margin-left: 40px;
+        }
+    }
+}

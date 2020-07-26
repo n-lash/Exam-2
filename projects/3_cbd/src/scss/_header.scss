@@ -1,0 +1,177 @@
+.header {
+    color: $N0;
+    @include text($H30, 400, $N0);
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    @include media(890px) {
+        border-bottom: 1px solid $N0;
+        background: linear-gradient(to top, transparent, rgba($B900, 0.35));
+        @include text($H16, 400, $N0);
+        transform: none;
+    }
+    &.bg-grey {
+        background: linear-gradient(to top, transparent, rgba($N00, 0.6));
+        height: 100px;
+        border-bottom: transparent;
+        & .header-menu__item {
+            border-color: transparent;
+        }
+    }
+
+    &__container {
+        overflow: hidden;
+        @include flex-col(space-around);
+        padding: 26px 20px 30px 50px;
+        transform: translateY(-100%);
+        background: rgba($N00, 0.4);
+        @include transition(translate, 0.2s, ease);
+        &.active {
+            transform: translateY(20%);
+        }
+        @include media(890px) {
+            @include flex-row(space-between, center);
+            transform: initial;
+            padding-top: 0;
+            padding-bottom: 0;
+            background: transparent;
+        }
+    }
+    &__logo {
+        font-size: $H40;
+        letter-spacing: normal;
+        // order: -1; 
+        margin-bottom: 10px;
+        display: none;
+        @include media(890px) {
+            order: initial;
+            font-size: $H30;
+            display: block;
+        }
+    }
+    &__logo-mobile {
+        position: absolute;
+        top: 24px;
+        right: 50px;
+        text-shadow: 2px 2px 44px $N00;
+        font-size: $H40;
+        @include media(890px) {
+            order: initial;
+            font-size: $H30;
+            display: none;
+        }
+    }
+}
+
+.header-burger {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0px 0px 35px 0px rgba($N00, 0.3);
+    background: rgba($N00, 0.1);
+    border-radius: 25%;
+    @include flex-row(center, center);
+    svg {
+        fill: $N0;
+        width: 42px;
+        height: 42px;
+    }
+
+    @include media(890px) {
+        display: none;
+    }
+}
+
+.header-nav {
+    min-width: 28%;
+    max-width: 40%;
+    padding: 6px 0 0;
+    @include media(890px) {
+        padding: 34px 0 30px;
+    }
+    &__list {
+        @include flex-col(space-around);
+
+        @include media(890px) {
+            @include flex-row(space-between, center);
+        }
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: inline-flex;
+        width: fit-content;
+        position: relative;       
+        &:before {
+            content: '';
+            display: block;
+            width: 130%;
+            height: 2px;
+            background-color: transparent;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 16px);
+            opacity: 1;
+            appearance: none;
+            position: absolute;
+            transition: background-color 0.2s ease;
+        }
+        // &.selected {
+        //     &:before {
+        //         background-color: $G450;
+        //     }
+        // }
+        @include media(890px) {
+            &:hover,
+            &.selected {
+                &:before {
+                    background-color: $G450;
+                }
+            }
+        }
+    }
+}
+
+.header-menu {
+    min-height: 100%;
+    
+    &__list {
+        @include flex-col(space-around);
+        height: 100%;
+        @include media(890px) {
+            @include flex-row(space-between, stretch);
+        }
+    }
+    &__item {
+        @include flex-row(stretch, stretch);
+        @include media(890px) {
+            border-left: 1px solid $N0;
+            padding: 36px 32px 30px;
+        }
+    }
+    &__link {
+        transition: all 0.2s ease;
+        @include flex-row(center, center);
+        svg {
+            fill: $N0;
+            margin-right: 10px;
+        }
+        @include media ($screen-desktop) {
+            &:hover {
+                color: $G450;
+                svg {
+                    fill: $G450;
+                }
+            }
+        }
+    }
+}

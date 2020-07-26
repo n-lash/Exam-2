@@ -1,0 +1,125 @@
+.intro {
+    color: $N10;
+    background: $G420 url('../img/intro-bg.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 100px 15px 60px;
+    position: relative;
+    @include flex-row(stretch, center);
+    &__container {
+        max-width: 70%;
+        flex: 1;
+        text-align: right;
+        margin: 0 auto;
+    }
+    &__title {
+        @include text($H30);
+        text-transform: uppercase;
+        line-height: 1.36;
+        letter-spacing: 15.4px;
+        text-align: right;
+        text-shadow: 2px 2px 30px $N00;
+
+        @include media($screen-tablet-small) {
+            font-size: 40px;
+            span {
+                display: block;
+            }
+        }
+        @include media($screen-tablet-medium) {
+            font-size: 55px;
+        }
+    }
+    &__slogan {
+        @include text($H24, 300);
+        text-transform: capitalize;
+        line-height: 1.5;
+        letter-spacing: 6.72px;
+        text-align: right;
+        margin-bottom: 30px;
+        @include media($screen-tablet) {
+            line-height: 3.13;
+        }
+    }
+    &__btn {
+        display: block;
+        @include text($H20, 400, $N0);
+        text-transform: uppercase;
+        text-align: right;
+        width: fit-content;
+        padding: 0 20px;
+        min-height: 70px;
+        @include border($N0);
+        @include flex-row(center, center);
+        margin-left: auto;
+        margin-bottom: 20px;
+        &:after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 45px;
+            margin-left: 18px;
+            background-color: $N0;
+        }
+        @include media($screen-tablet-small) {
+            padding: 0 40px;
+        }
+        @include media($screen-desktop) {
+            &:hover {
+                background-color: rgba($N0, 0.2);
+            }
+        }
+    }
+    &__link {
+        display: block;
+        @include text($H18, 300);
+        letter-spacing: 5.04px;
+        text-align: right;
+        @include media($screen-desktop) {
+            &:hover {
+                color: $G420;
+            }
+        }
+    }
+    &__aside {
+        display: none;
+        @include media($screen-tablet-medium) {
+            display: block;
+            @include text($H26);
+            text-transform: uppercase;
+            letter-spacing: 2.08px;
+            line-height: 1;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            position: absolute;
+            left: 30px;
+            bottom: -26px;
+            &:before {
+                content: '';
+                width: 100px;
+                height: 2px;
+                display: inline-block;
+                background-color: $N0;
+                margin-right: 30px;
+                transform: translateY(-10px);
+            }
+        }
+    }
+    &__scroll {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 26px;
+        width: 42px;
+        text-align: center;
+        &.animated {
+            animation-duration: 0s;
+        }
+        @include media($screen-netbook) {
+            bottom: 60px;
+            &.animated {
+                animation-duration: 1s;
+            }
+        }
+    }
+}

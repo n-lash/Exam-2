@@ -1,0 +1,84 @@
+.faqs {
+    padding: 64px 0 150px;
+    &__container {
+        max-width: 610px;
+        margin: 0 auto;
+        padding: 0 15px;
+        @include media($screen-tablet-medium) {
+            padding: 0 20px;
+        }
+        @include media($screen-netbook) {
+            padding: 0 30px;
+        }
+    }
+
+    &__title {
+        @include text($H30, $color: $N550);
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 6px;
+        text-align: center;
+        border-bottom: 2px solid $G415;
+        padding-bottom: 20px;
+
+        @include media($screen-tablet) {
+            line-height: 2.5;
+        }
+    }
+}
+
+.faqs-accordion {
+    & >:nth-child(n+2) {
+        margin-top: 0;
+    }
+    &__item {
+        margin-top: 0;
+        &.uk-open .faqs-accordion__title:before {
+            background-image: url('../img/icons/minus.svg');
+        }
+        &.uk-open .faqs-accordion__title {
+            border-bottom: transparent;
+        }
+    }
+
+    &__title {
+        @include text($H18, 300, $G490);
+        line-height: 2;
+        letter-spacing: 5.04px;
+        text-align: left;
+        @include flex-row($align: center);
+        border-bottom: 2px solid $G415;
+        &:before {
+            width: 1.25em;
+            height: 1.25em;
+            // margin-right: 30px;
+            margin: auto 30px auto 0;
+            float: left;
+            background-image: url('../img/icons/plus.svg');
+        }
+
+        @include media($screen-tablet-medium) {
+            line-height: 3;
+        }
+        @include media($screen-netbook) {
+            line-height: 4.17;
+        }
+    }
+
+    &__content {}
+
+    &__text {
+        @include text($H18, 300, $N00);
+        line-height: 1.5;
+        letter-spacing: 0.72px;
+        text-align: left;
+        padding-left: 50px;
+
+        @include media($screen-tablet-medium) {
+            line-height: 1.8;
+        }
+        @include media($screen-netbook) {
+            line-height: 2.22;
+        }
+    }
+}
