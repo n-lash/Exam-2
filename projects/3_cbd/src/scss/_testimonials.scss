@@ -2,34 +2,31 @@
     background-color: $G410;
     color: $N0;
     position: relative;
-    padding-bottom: 40px;
-
-    @include media($screen-tablet) {
-        padding-bottom: 0;
-    }
 }
 
 .testimonials-slider {
-    &__list {
-        min-height: 96vh !important;
-    }
+    // &__list {
+        // min-height: 95vh !important;
+    // }
     &__item {
         padding: 15px;
         // @include flex-col(center, center);
         background: url('../img/testimonials-bg.jpg') center no-repeat;
         background-size: cover;
         &:nth-child(2) {
-            background: url('https://picsum.photos/1920/800') center no-repeat;
+            background: url('https://picsum.photos/id/107/1920/800') center no-repeat;
+            background-size: cover;
         }
         &:last-child {
             background: url('https://picsum.photos/1920/800?blur') center no-repeat;
+            background-size: cover;
         }
     }
     &__content-wrapper {
         @include flex-col(center, center);
         height: 100%;
         &:before {
-            content: "";
+            content: '';
             display: block;
             position: absolute;
             top: 0;
@@ -104,17 +101,18 @@
         @include flex-row;
         position: absolute;
         left: 50%;
+        bottom: 0;
         transform: translate(-50%, 0);
         @include media($screen-tablet) {
-            transform: translate(-50%, -40px);
+            transform: translate(-50%, 0);
         }
         @include media($screen-desktop) {
-            transform: translate(-50%, -100px);
+            transform: translate(-50%, 0);
         }
     }
     &__arrow {
-        width: 70px;
-        height: 40px;
+        width: 100px;
+        height: 70px;
         @include border($N0);
         @include flex-row(center, center);
         padding: 0 5px;

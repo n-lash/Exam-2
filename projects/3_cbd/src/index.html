@@ -84,7 +84,7 @@
 				</div>
 
 				<div class="about-us__tabs">
-					<ul class="about-us__tablinks" uk-tab>
+					<ul class="about-us__tablinks" data-uk-tab>
 						<li class="about-us__tablinks-title  uk-active"><a href="#">What is CBD ?</a></li>
 						<li class="about-us__tablinks-title"><a href="#">Benefits</a></li>
 						<li class="about-us__tablinks-title"><a href="#">Our difference</a></li>
@@ -133,7 +133,7 @@
 			<div class="products__container  container">
 				<h2 class="products__title">CBD Featured Products</h2>
 
-				<div class="products-slider  uk-position-relative uk-visible-toggle" uk-slider>
+				<div class="products-slider  uk-position-relative uk-visible-toggle" data-uk-slider>
 						<ul class="products-slider__list uk-slider-items">
 							<li class="products-slider__item">
 								<div class="products-slider__item-info">
@@ -239,8 +239,8 @@
 							</li>
 						</ul>
 						<div class="products-slider__arrows-wrapper">
-							<a class="products-slider__arrow" href="#" uk-slidenav-previous uk-slider-item="previous"><img src="./img/icons/products-slider-arrow-left.svg" alt="arrow left"></a>
-							<a class="products-slider__arrow products-slider__arrow--right" href="#" uk-slidenav-next uk-slider-item="next"><img src="./img/icons/products-slider-arrow-right.svg" alt="arrow right"></a>
+							<a class="products-slider__arrow" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"><img src="./img/icons/products-slider-arrow-left.svg" alt="arrow left"></a>
+							<a class="products-slider__arrow products-slider__arrow--right" href="#" data-uk-slidenav-next data-uk-slider-item="next"><img src="./img/icons/products-slider-arrow-right.svg" alt="arrow right"></a>
 						</div>
 				</div>
 			</div>
@@ -250,7 +250,7 @@
 			<div class="faqs__container  container">
 				<h2 class="faqs__title">Frequently asked questions</h2>
 
-				<ul class="faqs-accordion" uk-accordion>
+				<ul class="faqs-accordion" data-uk-accordion>
 					<li class="faqs-accordion__item">
 						<a class="faqs-accordion__title  uk-accordion-title" href="#"> What is Cannabidiol (CBD)? </a>
 						<div class="faqs-accordion__content  uk-accordion-content">
@@ -280,8 +280,8 @@
 		</section>
 
 		<section class="testimonials">
-			<div class="testimonials-slider  uk-position-relative uk-visible-toggle" uk-slideshow="animation: fade">
-				<ul class="testimonials-slider__list  uk-slideshow-items">
+			<div class="testimonials-slider  uk-position-relative uk-visible-toggle" data-uk-slideshow="animation: fade">
+				<ul class="testimonials-slider__list  uk-slideshow-items" data-uk-height-viewport="min-height: 600">
 					<li class="testimonials-slider__item">
 						<div class="testimonials-slider__content-wrapper">
 							<ul class="testimonials-slider__item-rating">
@@ -317,15 +317,15 @@
 								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
 								<li class="testimonials-slider__item-star"><img src="./img/icons/testimonials-slider-star.svg" alt="star"></li>
 							</ul>
-							<p class="testimonials-slider__item-text">I am back for good! CBD is amazing!</p>
+							<p class="testimonials-slider__item-text">Thanks, I'm back for good! CBD is amazing!</p>
 							<p class="testimonials-slider__item-author">Ipsum L.</p>
 						</div>
 					</li>
 				</ul>
 				<aside class="testimonials-slider__item-aside">CBD every day</aside>
 				<div class="testimonials-slider__arrow-wrapper">
-					<a class="testimonials-slider__arrow" href="#" uk-slidenav-previous uk-slideshow-item="previous"><img src="./img/icons/testimonials-slider-left.svg" alt=""></a>
-					<a class="testimonials-slider__arrow" href="#" uk-slidenav-next uk-slideshow-item="next"><img src="./img/icons/testimonials-slider-right.svg" alt=""></a>
+					<a class="testimonials-slider__arrow" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"><img src="./img/icons/testimonials-slider-left.svg" alt=""></a>
+					<a class="testimonials-slider__arrow" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"><img src="./img/icons/testimonials-slider-right.svg" alt=""></a>
 				</div>
 			</div>
 		</section>
@@ -379,7 +379,7 @@
 			<div class="footer-form">
 				<h5 class="footer-form__title">Subscribe to Newsletter</h5>
 				<form class="footer-form__form" action="#">
-					<input class="footer-form__input" type="text" placeholder="Email">
+					<input class="footer-form__input" type="text" placeholder="Email" required>
 					<button class="footer-form__btn" type="submit">
 						<svg xmlns="http://www.w3.org/2000/svg" width="26" height="15">
 							<g>

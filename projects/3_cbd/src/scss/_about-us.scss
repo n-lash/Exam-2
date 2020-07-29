@@ -39,10 +39,16 @@
     &__tablinks {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 0;
         &:before {
             border-bottom: 2px solid $G420;
             max-width: 82%;
+            transform: translateX(17%);
+            @include media($screen-desktop) {
+                max-width: 82%;
+                transform: translateX(7%);
+            }
         }
         a {
             font-size: inherit;
@@ -52,6 +58,11 @@
         }
         @include media($screen-netbook) {
             flex-direction: row;
+            padding-left: 0;
+        }
+        @include media($screen-desktop) {
+            flex-direction: row;
+            padding-left: 7%;
         }
     }
     &__tablinks-title {

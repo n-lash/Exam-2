@@ -25,7 +25,6 @@
         margin-left: -20px;
         margin-right: -20px;
     }
-
     &__item {
         width: 100%;
         transform: translateX(40px);
@@ -82,7 +81,7 @@
         @include flex-row($align: center);
     }
     &__item-btn {
-        padding: 0 30px;
+        padding: 0 20px;
         text-align: left;
         @include text($H20, $color: $N0);
         background-color: $G490;
@@ -106,6 +105,15 @@
             @include text($H20, $color: $N0);
             text-transform: uppercase;
             line-height: 1;
+        }
+        @include media($screen-netbook) {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+        @include media(1272px) {
+            padding: 0 30px;
+            flex-basis: 40%;
+            max-width: 40%;
         }
     }
     &__arrows-wrapper {

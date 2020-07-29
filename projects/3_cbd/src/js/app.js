@@ -3,11 +3,15 @@ const header = document.getElementById('header');
 const burger = document.getElementById('headerBurger');
 const mobileMenu = document.getElementById('mobileMenu');
 const navList = document.getElementById('navList');
-
 const accordion = UIkit.accordion('.faqs-accordion', {
-    active: 1,
+    // active: 1,
     // collapsible: false,
 });
+
+// const slideShow = UIkit.slideshow('.testimonials-slider', {
+    // animation: fade,
+    // min-height: 96,
+// });
 
 document.addEventListener('scroll', () => {
     if (window.pageYOffset > header.clientHeight) {
